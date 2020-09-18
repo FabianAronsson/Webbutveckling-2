@@ -7,11 +7,12 @@
 </head>
 <body>
     <script src="simple.js">
-        /*
+        
                 //skapar 30 kvadrater diagonalt
-                for(var i = 0; i <= 30; i++){
+            /*for(var i = 0; i <= 30; i++){
                 rectangle(10*i,10*i,10,10,"red")
-        */
+            }*/
+        
         
             //Olika former
            /* rectangle(100,100,100,100,"blue")
@@ -49,13 +50,41 @@
                  line(random(totalWidth),random(totalHeight),random(totalWidth),random(totalHeight),5,colors[random(0,3)]);               
             }*/
 
-            //Ritar ut en svartvit triangel
+            //Ritar ut flera svartvita trianglar
             /*var xCord = 0;
             for (var i = 0; i < 100; i++) {
-                xCord += 15;
                 line(0,0,xCord,totalHeight,3,"black")
-            }*/
+                xCord += 15.5;
+            } 
 
+            var x = 0;
+            for (var i = 0; i < 100; i++) {
+                
+                line(totalWidth,0,x,totalHeight,3,"black")
+                x += 15.5;
+            } 
+
+            var x2 = 0;
+            for (var i = 0; i < 100; i++) {
+                
+                line(totalWidth,totalHeight,x2,0,3,"black")
+                x2 += 15.5;
+            } 
            
+            var x3 = totalWidth;
+            for (var i = 0; i < 100; i++) {
+                
+                line(0,totalHeight,x3,0,3,"black")
+                x3 -= 15.5;
+            }*/
+            
+            //ritar en sorts cirkel av linjer
+            var angle = 0;
+            while(angle < (2*3.14)){ 
+                line(totalWidth/2, totalHeight/2, ((totalWidth/2) + (cos(angle) * 200)), ((totalHeight/2) + (sin(angle) * 200)), 1, "black");
+                angle += (2*3.14)/72;
+                
+            }
+
     </script>
 </body>
