@@ -79,12 +79,19 @@
             }*/
             
             //ritar en sorts cirkel av linjer
-            var angle = 0;
+            /*var angle = 0;
             while(angle < (2*3.14)){ 
                 line(totalWidth/2, totalHeight/2, ((totalWidth/2) + (cos(angle) * 200)), ((totalHeight/2) + (sin(angle) * 200)), 1, "black");
                 angle += (2*3.14)/72;
+            }*/
+
+            var x = 0;
+            var y = 0;
+            for (var i = 0;  i <=  10; i++ ) {
+                x = random(0,255);
+                y = random(0,255);
+                text(x, y, "10", "x=" + x + ", y=" + y);
                 
             }
-
     </script>
 </body>
