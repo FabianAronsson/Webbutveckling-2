@@ -1,0 +1,16 @@
+
+@import "./variables";
+@import "./functions";
+
+h1{
+    text-align: center;
+    @include bgc($primaryBtn);
+}
+
+div{
+    @include centerBody();
+}
+
+body{
+    @include customUrl("./t1.gif");
+}

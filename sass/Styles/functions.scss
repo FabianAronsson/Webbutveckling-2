@@ -1,0 +1,16 @@
+@import "./variables.scss";
+
+@mixin bgc($color){
+    background-color: $color;
+}
+
+@mixin centerBody() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin customUrl ($customUrl){
+    background-image: url($customUrl);
+    background-repeat: no-repeat;
+}
