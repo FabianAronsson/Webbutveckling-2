@@ -1,0 +1,25 @@
+@import "./functions";
+@import "./variables";
+
+body{
+    margin: 0;
+}
+.pictureOne, .pictureTwo, .pictureThree {
+    @include wallpaperSetting();
+}   
+
+.pictureOne{
+    @include customUrlImage($wallpaperOne);
+    height: 100vh;
+}
+
+.pictureTwo{
+    @include customUrlImage($wallpaperTwo);
+    height: 100vh;
+}
+
+.pictureThree{
+    @include customUrlImage($wallpaperThree);
+    height: 100vh;
+}
+

@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+}
+
+.pictureOne, .pictureTwo, .pictureThree {
+  min-width: 400px;
+  opacity: 0.8;
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.pictureOne {
+  background-image: url("./64.jpg");
+  height: 100vh;
+}
+
+.pictureTwo {
+  background-image: url("./sunshine.jpg");
+  height: 100vh;
+}
+
+.pictureThree {
+  background-image: url("./galaxy.jpg");
+  height: 100vh;
+}
+/*# sourceMappingURL=style.css.map */
