@@ -1,6 +1,8 @@
 @import "./functions";
 @import "./variables";
 
+@include customFont($marioFont);
+
 body{
     margin: 0;
 }
@@ -8,18 +10,58 @@ body{
     @include wallpaperSetting();
 }   
 
+.header{
+    width: 100%;
+}
+#logo{
+    @include customUrlImage($logo);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: background-image 1s;
+    &:hover{
+        @include customUrlImage($logo2);    
+    }   
+}
+
+.container-nav{
+    width: 20vw;
+    height: 15vh;
+    margin: auto;
+}
+
+#2Head{
+        @include textGradient(rgb(60, 193, 255), rgb(183, 216, 37))
+}
+
+.informationBox{
+    @include basicTextSettings($fontSizeP, $fontSizeH1, marioFont);
+    @include flexDirection(column);
+    align-items: center;
+    
+
+    h1{
+        @include textGradient($gradColor, $gradColor2)
+    }
+    p{
+        font-family: Arial;
+        width: 25vw;
+    }
+
+   
+}
+
+
 .pictureOne{
     @include customUrlImage($wallpaperOne);
-    height: 100vh;
 }
 
 .pictureTwo{
     @include customUrlImage($wallpaperTwo);
-    height: 100vh;
 }
 
 .pictureThree{
     @include customUrlImage($wallpaperThree);
-    height: 100vh;
 }
 

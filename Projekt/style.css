@@ -1,9 +1,15 @@
+@font-face {
+  font-family: marioFont;
+  src: url("./SuperMario256.ttf");
+}
+
 body {
   margin: 0;
 }
 
 .pictureOne, .pictureTwo, .pictureThree {
   min-width: 400px;
+  height: 100vh;
   opacity: 0.8;
   position: relative;
   background-attachment: fixed;
@@ -12,18 +18,78 @@ body {
   background-size: cover;
 }
 
+.header {
+  width: 100%;
+}
+
+#logo {
+  background-image: url("images/logo.png");
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  -webkit-transition: background-image 1s;
+  transition: background-image 1s;
+}
+
+#logo:hover {
+  background-image: url("images/logo2.png");
+}
+
+.container-nav {
+  width: 20vw;
+  height: 15vh;
+  margin: auto;
+}
+
+#2Head {
+  background: -webkit-linear-gradient(red, #23bc16);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.informationBox {
+  font-family: marioFont;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.informationBox p {
+  font-size: 1.2vw;
+}
+
+.informationBox h1 {
+  font-size: 3vw;
+}
+
+.informationBox h1 {
+  background: -webkit-linear-gradient(red, #23bc16);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.informationBox p {
+  font-family: Arial;
+  width: 25vw;
+}
+
 .pictureOne {
-  background-image: url("./64.jpg");
-  height: 100vh;
+  background-image: url("images/64.jpg");
 }
 
 .pictureTwo {
-  background-image: url("./sunshine.jpg");
-  height: 100vh;
+  background-image: url("images/sunshine.jpg");
 }
 
 .pictureThree {
-  background-image: url("./galaxy.jpg");
-  height: 100vh;
+  background-image: url("images/galaxy.jpg");
 }
 /*# sourceMappingURL=style.css.map */
