@@ -19,29 +19,32 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    transition: background-color 1s, background-image 2s;
+    transition: background-color 1s, background-image 1s;
     &:hover{
-        
         @include customUrlImage($logo2);
-        background-color: red;   
     }   
 }
 
-.container-nav{
-    width: 20vw;
-    height: 15vh;
-    margin: auto;
+.container{
+    width: 100%;
+    transition: all 1s;
+    &:hover {
+        background-color: red;
+    } 
+
+   
 }
 
-#2Head{
-        @include textGradient(rgb(60, 193, 255), rgb(183, 216, 37))
+#container-nav{
+    width: 20vw;
+    height: 15vh;
+    margin: auto;  
 }
 
 .informationBox{
     @include basicTextSettings($fontSizeP, $fontSizeH1, marioFont);
     @include flexDirection(column);
     align-items: center;
-    
 
     h1{
         @include textGradient($gradColor, $gradColor2)
@@ -50,10 +53,15 @@ body{
         font-family: Arial;
         width: 25vw;
     }
-
-   
 }
 
+#text {
+        @include textGradient($gradColor3, $gradColor4);
+    }
+
+#thirdText{
+    @include textGradient($gradColor5, $gradColor6);
+}
 
 .pictureOne{
     @include customUrlImage($wallpaperOne);

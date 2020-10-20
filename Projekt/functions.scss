@@ -45,8 +45,14 @@
 }  
 
 @mixin textGradient($color1, $color2){
-    background: -webkit-linear-gradient($gradColor, $gradColor2);
+    background: -webkit-linear-gradient($color1, $color2);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     
+}
+
+@mixin hej(){
+    @for $var from start to end {
+        
+    }
 }

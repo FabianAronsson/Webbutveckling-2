@@ -28,25 +28,28 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  -webkit-transition: background-color 1s, background-image 2s;
-  transition: background-color 1s, background-image 2s;
+  -webkit-transition: background-color 1s, background-image 1s;
+  transition: background-color 1s, background-image 1s;
 }
 
 #logo:hover {
   background-image: url("images/logo2.png");
+}
+
+.container {
+  width: 100%;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.container:hover {
   background-color: red;
 }
 
-.container-nav {
+#container-nav {
   width: 20vw;
   height: 15vh;
   margin: auto;
-}
-
-#2Head {
-  background: -webkit-linear-gradient(red, #971700);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .informationBox {
@@ -72,7 +75,7 @@ body {
 }
 
 .informationBox h1 {
-  background: -webkit-linear-gradient(red, #971700);
+  background: -webkit-linear-gradient(red, #6d1000);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -80,6 +83,18 @@ body {
 .informationBox p {
   font-family: Arial;
   width: 25vw;
+}
+
+#text {
+  background: -webkit-linear-gradient(#3cc1ff, #2584b1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#thirdText {
+  background: -webkit-linear-gradient(#3914a0, #247ba3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .pictureOne {
