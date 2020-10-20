@@ -28,12 +28,13 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  -webkit-transition: background-image 1s;
-  transition: background-image 1s;
+  -webkit-transition: background-color 1s, background-image 2s;
+  transition: background-color 1s, background-image 2s;
 }
 
 #logo:hover {
   background-image: url("images/logo2.png");
+  background-color: red;
 }
 
 .container-nav {
@@ -43,7 +44,7 @@ body {
 }
 
 #2Head {
-  background: -webkit-linear-gradient(red, #23bc16);
+  background: -webkit-linear-gradient(red, #971700);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -71,7 +72,7 @@ body {
 }
 
 .informationBox h1 {
-  background: -webkit-linear-gradient(red, #23bc16);
+  background: -webkit-linear-gradient(red, #971700);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
