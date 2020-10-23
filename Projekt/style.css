@@ -38,12 +38,13 @@ body {
 
 .container {
   width: 100%;
-  -webkit-transition: all 1s;
-  transition: all 1s;
+  background-image: url("images/white.png");
+  -webkit-transition: background-image 1s;
+  transition: background-image 1s;
 }
 
 .container:hover {
-  background-color: red;
+  background-image: url("images/3.jpg");
 }
 
 #container-nav {
