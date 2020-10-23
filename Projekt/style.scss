@@ -6,34 +6,21 @@
 body{
     margin: 0;
 }
+
 .pictureOne, .pictureTwo, .pictureThree {
+    @include basicImageSettings();
     @include wallpaperSetting();
 }   
 
-.header{
-    width: 100%;
-}
-#logo{
-    @include customUrlImage($logo);
-    height: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    transition: background-color 1s, background-image 1s;
-    &:hover{
-        @include customUrlImage($logo2);
-    }   
-}
-
 .container{
     width: 100%;
-    @include customUrlImage($logo4);
+    cursor: pointer;
+    @include basicImageSettings();
+    @include customUrlImage($NAVIMAGE);
     transition: background-image 1s;
     &:hover { 
-        @include customUrlImage($logo3);
+        @include customUrlImage($NAVIMAGE2);
     } 
-
-   
 }
 
 #container-nav{

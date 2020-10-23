@@ -9,7 +9,7 @@
 </head>
 <body>
 
-    <div class="container">
+    <div class="container" onclick="changeImage()">
         <div id="container-nav">
             <div id="logo"></div>
         </div>
@@ -41,9 +41,10 @@
     <div class="footer"></div>
 </body>
 
-<script>
-    function myFunction(){
-        
+<script type="text/javascript">
+    function changeImage(){
+        var container = document.getElementsByClassName("container")[0];
+        container.style.backgroundImage = "url(images/navImage2.png)";
     }
 
 </script>
