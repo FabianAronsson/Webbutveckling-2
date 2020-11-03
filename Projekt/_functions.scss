@@ -1,15 +1,15 @@
 @import "./_variables";
 
-@mixin customUrlImage ($url) {
+@mixin customUrlImage ($url) { //sätter en bakgrund på en div
     background-image: url($url);
 }
 
-@mixin flexDirection($orientation){
+@mixin flexDirection($orientation){ //sätter flex och sedan får man välja flex-direction
     display: flex;
     flex-direction: $orientation;
 }
 
-@mixin wallpaperSetting(){
+@mixin wallpaperSetting(){ //denna metod har basic inställningar som alla bilder ska ha
     min-width: 400px;
     height: 100vh;
     opacity: 0.8;
@@ -17,13 +17,13 @@
     background-attachment: fixed;
 }
 
-@mixin basicImageSettings(){
+@mixin basicImageSettings(){ //denna metod är lite lik förra metoden, men denna är generell för alla bilder,
     background: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
-@mixin basicTextSettings($fontSizeP, $fontSizeH1, $fontFamily){
+@mixin basicTextSettings($fontSizeP, $fontSizeH1, $fontFamily){ //denna metod sätter font inställningar för all text
     font-family: $fontFamily;
     
 
@@ -38,26 +38,17 @@
     
 }
 
-@mixin customFont($path){
+@mixin customFont($path){ //denna metod sätter en custom font
     @font-face {
         font-family: marioFont;
         src: url($path);
     }
 }
 
-@mixin customUrl ($url){
-    return: $url;
-}  
-
-@mixin textGradient($color1, $color2){
+@mixin textGradient($color1, $color2){ //denna metod sätter en gradient på text
     background: -webkit-linear-gradient($color1, $color2);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     
 }
 
-@mixin hej(){
-    @for $var from start to end {
-        
-    }
-}
